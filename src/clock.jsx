@@ -3,7 +3,7 @@ import React from "react";
 class Clock extends React.Component {
     constructor(props){
         super(props); 
-        this.state = 234; 
+        this.state = {time: new Date()}; 
     }
     render(){
         return (
@@ -13,8 +13,12 @@ class Clock extends React.Component {
             
         )
     }
-}
 
+    tick(){
+        let newDate = new Date(); 
+        this.setState({newDate}); 
+    }
+}
 
 export default Clock; 
 
