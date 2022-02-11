@@ -5,6 +5,5 @@ import Clock from "./src/clock";
 
 document.addEventListener("DOMContentLoaded", () => {
     const main = document.getElementById("main");
-    debugger
     ReactDOM.render(<Root />, main)
 });
